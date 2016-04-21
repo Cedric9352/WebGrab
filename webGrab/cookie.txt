@@ -1,0 +1,5 @@
+# Netscape HTTP Cookie File
+# http://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file!  Do not edit.
+
+graduate.ouc.edu.cn	FALSE	/	FALSE		JSESSIONID	460872E6C83DE4201BACDE9B4377D7C4.TG1
