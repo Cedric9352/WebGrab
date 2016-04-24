@@ -1,4 +1,4 @@
-# coding:utf-8
+# coding=utf-8
 
 import urllib2
 
@@ -20,6 +20,6 @@ class HtmlDownloader(object):
 
         except urllib2.URLError, e:
             if hasattr(e, 'reason'):
-                print '连接糗事百科失败，错误原因：', e.reason()
+                print '连接糗事百科失败，错误原因：', e.reason
                 return None
 

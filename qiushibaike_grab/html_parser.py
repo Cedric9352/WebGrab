@@ -1,4 +1,4 @@
-# coding:utf-8
+# coding=utf-8
 
 import urlparse
 import re
@@ -27,7 +27,13 @@ class HtmlParser(object):
             page_nodes = soup.find_all('div', class_="article block untagged mb15")
             for node in page_nodes:
                 res_dict = dict()
-                res_dict['author'] = node.find('a', href=re.compile(r'/user/\w+?/')).find('h2').get_text()
+
+                if node.find('a', href=re.compile(r'/users/\w+?/'), title=re.compile(r'.*')) is None:
+                    res_dict['author'] = '匿名用户'
+                else:
+                    res_dict['author'] = node.find('a', href=re.compile(r'/users/\w+?/'),
+                                                   title=re.compile(r'.*')).find('h2').get_text()
+
                 res_dict['content'] = node.find('div', class_="content").get_text()
                 res_dict['vote'] = node.find('i', class_="number").get_text()
 

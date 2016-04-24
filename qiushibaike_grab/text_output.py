@@ -1,9 +1,9 @@
-# coding:utf-8
+# coding=utf-8
 
 
 class TextOutput(object):
 
-    def __init(self):
+    def __init__(self):
         self.data = list()
 
     def collect_data(self, data):
@@ -11,14 +11,15 @@ class TextOutput(object):
             return
         self.data.append(data)
 
-    def output_html(self):
+    def text_output(self):
         output = open(r'E:\jokes.txt', 'w')
 
         for joke_lists in self.data:
             for joke in joke_lists:
-                output.write(joke['author']+"\t")
-                output.write(joke['vote']+"\t")
-                output.write(joke['img_url']+"\n")
-                output.write(joke['content']+"\n\n")
+
+                output.write("%s\t" % joke['author'].encode('utf-8'))
+                output.write("%d\t" % int(joke['vote']))
+                output.write("%s\n" % joke['img_url'])
+                output.write("%s\n\n" % joke['content'].encode('utf-8'))
 
         output.close()

@@ -1,8 +1,9 @@
-# coding:utf-8
+# coding=utf-8
+
 from qiushibaike_grab import url_manager, html_parser, html_downloader, text_output
 
 
-class QSBK_grab(object):
+class QSBKGrab(object):
 
     def __init__(self):
         self.url = url_manager.UrlManager()
@@ -21,12 +22,20 @@ class QSBK_grab(object):
             new_url, new_data = self.parser.parse(new_url, html_cont)
             self.url.add_new_url(new_url)
             self.output.collect_data(new_data)
+            count += 1
+
+            if count == 10:
+                break
 
         print 'craw finished!'
 
-        self.output.html_output()
+        self.output.text_output()
 
 if __name__ == '__main__':
+    import sys
+    reload(sys)
+    sys.setdefaultencoding('utf-8')
+    
     root_url = 'http://www.qiushibaike.com/hot/'
-    spider = QSBK_grab()
+    spider = QSBKGrab()
     spider.craw(root_url)
