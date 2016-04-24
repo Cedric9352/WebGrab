@@ -11,7 +11,7 @@ class HtmlOutput(object):
         self.data.append(data)
 
     def output_html(self):
-        output = open('output.html', 'w')
+        output = open(r'E:\output.html', 'w')
 
         output.write("<html>")
         output.write("<body>")
