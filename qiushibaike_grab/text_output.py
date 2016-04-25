@@ -16,7 +16,6 @@ class TextOutput(object):
 
         for joke_lists in self.data:
             for joke in joke_lists:
-
                 output.write("%s\t" % joke['author'].encode('utf-8'))
                 output.write("%d\t" % int(joke['vote']))
                 output.write("%s\n" % joke['img_url'])

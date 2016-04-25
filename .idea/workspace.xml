@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22e27b9b-f062-4be2-ad67-90ff28bfc435" name="Default" comment="" />
+    <list default="true" id="22e27b9b-f062-4be2-ad67-90ff28bfc435" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qiushibaike_grab/text_output.py" afterPath="$PROJECT_DIR$/qiushibaike_grab/text_output.py" />
+    </list>
     <ignored path="WebGrab.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,17 +28,27 @@
         <entry file="file://$PROJECT_DIR$/qiushibaike_grab/grab_main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="text_output.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="text_output.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/qiushibaike_grab/text_output.py">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5037037">
+              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="html_output.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/baike_spider/html_output.py">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -61,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="html_parser.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="html_parser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qiushibaike_grab/html_parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.4518518">
-              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="72" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -97,12 +110,12 @@
         <option value="$PROJECT_DIR$/baike_spider/html_downloader.py" />
         <option value="$PROJECT_DIR$/baike_spider/spider_main.py" />
         <option value="$PROJECT_DIR$/baike_spider/html_parser.py" />
-        <option value="$PROJECT_DIR$/baike_spider/html_output.py" />
-        <option value="$PROJECT_DIR$/qiushibaike_grab/text_output.py" />
         <option value="$PROJECT_DIR$/qiushibaike_grab/html_downloader.py" />
         <option value="$PROJECT_DIR$/qiushibaike_grab/url_manager.py" />
         <option value="$PROJECT_DIR$/qiushibaike_grab/html_parser.py" />
         <option value="$PROJECT_DIR$/qiushibaike_grab/grab_main.py" />
+        <option value="$PROJECT_DIR$/baike_spider/html_output.py" />
+        <option value="$PROJECT_DIR$/qiushibaike_grab/text_output.py" />
       </list>
     </option>
   </component>
@@ -137,8 +150,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -185,8 +196,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGrab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="baike_spider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -442,7 +469,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13277134" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -816,13 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/baike_spider/html_output.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4862518">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/baike_spider/html_parser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9117221">
@@ -833,7 +853,7 @@
     <entry file="file://$PROJECT_DIR$/qiushibaike_grab/grab_main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -846,10 +866,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qiushibaike_grab/text_output.py">
+    <entry file="file://$PROJECT_DIR$/qiushibaike_grab/html_parser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <caret line="33" column="72" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
           <folding />
         </state>
       </provider>
@@ -862,10 +882,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qiushibaike_grab/html_parser.py">
+    <entry file="file://$PROJECT_DIR$/baike_spider/html_output.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4518518">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qiushibaike_grab/text_output.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5037037">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
           <folding />
         </state>
       </provider>
