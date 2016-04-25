@@ -27,9 +27,10 @@ class QSBKGrab(object):
             if count == 10:
                 break
 
-        print 'craw finished!'
-
+        print '\ncraw finished!'
+        print '...writing to files'
         self.output.text_output()
+        print '...done!'
 
 if __name__ == '__main__':
     import sys
