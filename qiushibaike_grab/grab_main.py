@@ -33,10 +33,7 @@ class QSBKGrab(object):
         print '...done!'
 
 if __name__ == '__main__':
-    import sys
-    reload(sys)
-    sys.setdefaultencoding('utf-8')
-    
+    print '...start crawing'
     root_url = 'http://www.qiushibaike.com/hot/'
     spider = QSBKGrab()
     spider.craw(root_url)

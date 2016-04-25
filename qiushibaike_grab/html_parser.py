@@ -29,7 +29,7 @@ class HtmlParser(object):
                 res_dict = dict()
 
                 if node.find('a', href=re.compile(r'/users/\w+?/'), title=re.compile(r'.*')) is None:
-                    res_dict['author'] = '匿名用户'
+                    res_dict['author'] = '匿名用户'.decode('utf-8')
                 else:
                     res_dict['author'] = node.find('a', href=re.compile(r'/users/\w+?/'),
                                                    title=re.compile(r'.*')).find('h2').get_text()
