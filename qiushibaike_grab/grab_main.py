@@ -35,7 +35,7 @@ class QSBKGrab(object):
 if __name__ == '__main__':
     import sys
     reload(sys)
-    # sys.setdefaultencoding('utf-8')
+    sys.setdefaultencoding('utf-8')
     
     root_url = 'http://www.qiushibaike.com/hot/'
     spider = QSBKGrab()
