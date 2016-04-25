@@ -12,12 +12,12 @@ class QSBKGrab(object):
         self.output = text_output.TextOutput()
 
     def craw(self, root):
-        count = 1
+        count = 0
         self.url.add_new_url(root)
 
         while self.url.has_new_url():
             new_url = self.url.get_new_url()
-            print "craw %d : %s " % (count, new_url)
+            print "craw %d : %s " % (count+1, new_url)
             html_cont = self.downloader.download(new_url)
             new_url, new_data = self.parser.parse(new_url, html_cont)
             self.url.add_new_url(new_url)
@@ -35,7 +35,7 @@ class QSBKGrab(object):
 if __name__ == '__main__':
     import sys
     reload(sys)
-    sys.setdefaultencoding('utf-8')
+    # sys.setdefaultencoding('utf-8')
     
     root_url = 'http://www.qiushibaike.com/hot/'
     spider = QSBKGrab()
